@@ -54,46 +54,35 @@ function productosLista() {
 		<li> ${producto.stock}</li>
 		`
 
-	/*let allInputs = document.getElementsByClassName("allInputs");
-	let agregarProducto = document.getElementById("agregarProducto");
-
-
-	if (nombreProducto.value.length == 0 && categoriaProducto.value.length == 0 && stockProducto.value.length == 0){
-		alert("Insertar valores");
-	} else if (nombreProducto.value.length <= 1 && categoriaProducto.value.length == 0 && stockProducto.value.length == 0) {
-		alert("Insertar categoria y stock")
-	} else if (nombreProducto.value.length == 0 && categoriaProducto.value.length == 0 && stockProducto.value.length <= 1) {
-		alert("Insertar producto y categoria")
-	} else if (nombreProducto.value.length == 0 && categoriaProducto.value.length <= 1 && stockProducto.value.length == 0) {
-		alert("Insertar producto y stock")
-	} else if (nombreProducto.value.length == 0 && categoriaProducto.value.length <= 1 && stockProducto.value.length <= 1) {
-		alert("Insertar producto")
-	} else if (nombreProducto.value.length <= 1 && categoriaProducto.value.length <= 1 && stockProducto.value.length == 0) {
-		alert("Insertar stock")
-	} else if (nombreProducto.value.length <= 1 && categoriaProducto.value.length == 0 && stockProducto.value.length == 0) {
-		alert("Insertar categoria y stock")
-	} else if (nombreProducto.value.length <= 1 && categoriaProducto.value.length == 0 && stockProducto.value.length <= 1) {
-		alert("Insertar categoria")
-	} else if (nombreProducto.value.length <= 1 && categoriaProducto.value.length <= 1 && stockProducto.value.length <= 1) {
-
-		// Objeto
-		let listaFinal = {
-			nombreProducto : nombreProducto.value,
-			categoriaProducto : categoriaProducto.value,
-			stockProducto : stockProducto.value
-		}
-
-		// let listaProductos = document.getElementById("listaProductos");
-		// let elementoLista = document.createElement("li");
-
-		// let children = listaProductos.children.length + 1;
-		// elementoLista.setAttribute("id", "Elemento"+children);
-		// elementoLista.appendChild(document.createTextNode("Elemento"+children));
-		// listaProductos.appendChild(elementoLista)
-
-		// console.log(nombreProducto, categoriaProducto, stockProducto);
-		
-
-	}*/
-
 }
+
+// EJERCICIO CUATRO
+
+function sumaDeNumeros() {
+	let arrayDeNumeros = [1, 2, 3];
+
+	let transformarNumeros = parseInt(arrayDeNumeros[0]);
+	let transformarNumerosDos = parseInt(arrayDeNumeros[1]);
+	let transformarNumerosTres = parseInt(arrayDeNumeros[2]);
+
+	let sumarNumerosTransformados = transformarNumeros + transformarNumerosDos + transformarNumerosTres;
+
+	document.getElementById("numerosTransformados").innerHTML = sumarNumerosTransformados;
+}
+
+sumaDeNumeros();
+
+// EJERCICIO CINCO
+
+function saludoCurso() {
+	// var saludoCurso = "Hola Como estas?";
+	// document.write(saludocurso);
+
+	// El problema de este ejercicio es que en document.write la c de "saludocurso" es minúscula
+	// y la variable tiene mayúscula
+
+	let saludoCurso = "Hola como estás?";
+	document.write(saludoCurso);
+}
+
+saludoCurso();

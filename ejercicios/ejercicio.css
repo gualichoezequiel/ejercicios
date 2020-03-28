@@ -81,3 +81,16 @@ hr {
 h2 {
 	font-size: 22px;
 }
+
+#listaProductos {
+	padding: 0;
+}
+
+#listaProductos li {
+	display: inline-block;
+	margin-bottom: 0;
+}
+
+.resultado-texto {
+	margin-bottom: 10px;
+}
