@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>javascript2</title>
+	<link rel="stylesheet" type="text/css" href="ejercicio.css">
+</head>
+
+<body>
+
+	<!--EJERCICIOS-->
+	<div class="ejercicios">
+		<ul>
+			<!--EJERCICIO UNO-->
+			<li>Crear un programa en JS que muestre la suma de 2 números (en variables) por pantalla</li>
+
+			<!--EJERCICIO DOS-->
+			<li>Crear un programa que pida al usuario que ingrese 2 números, y luego muestre por pantalla la suma de esos 2 números</li>
+
+			<!--EJERCICIO TRES-->
+			<li>Crear un programa que pida al usuario que ingrese los siguientes datos de un producto:
+				<ul class="roman">
+					<li>Nombre</li>
+					<li>Categoría</li>
+					<li>Stock</li>
+				</ul>
+				Luego el programa debe ingresar los datos en un objeto, y mostrar cada elemento del objeto por pantalla, uno al lado del otro con un espacio
+			</li>
+
+			<!--EJERCICIO CUATRO-->
+			<li>Crear un programa en donde se cree una variable que tenga de valor un array numérico, y luego mostrar por pantalla la suma de cada uno de los elementos del array. (El array puede tener los números como string, en ese caso, transformarlos)</li>
+
+			<!--EJERCICIO CINCO-->
+			<li>Tengo el siguiente código, en el que quiero que me muestre por pantalla "Hola Como estas?", pero no me funciona...que está sucediendo y como se arregla?
+				<br />
+				var saludoCurso = "Hola Como estas?";<br />
+				document.write(saludocurso)
+			</li>
+		</ul>
+	</div>
+	<!--END EJERCICIOS-->
+
+	<hr>
+
+	<!--EJERCICIO DOS-->
+	<h2>Ejercicio N˚1</h2>
+	<div id="ejercicioUno"></div>
+	<!--END EJERCICIO DOS-->
+
+	<hr>
+
+	<!--EJERCICIO DOS-->
+	<h2>Ejercicio N˚2</h2>
+	<p>Ingresar números</p>
+	<input id="primerNumero" type="" name="">
+	<input id="segundoNumero" type="" name="">
+	<button onclick="sumarNumerosUsuario();">Sumar</button> = 
+	<input id="resultado" />
+	<!--END EJERCICIO DOS-->
+
+	<hr>
+
+	<!--EJERCICIO TRES-->
+	<h2>Ejercicio N˚3</h2>
+
+	<input id="nombreProducto" type="" name="" class="allInputs" placeholder="Ingresar Producto" />
+	<input id="categoriaProducto" type="" name="" class="allInputs" placeholder="Ingresar Categoria" />
+	<input id="stockProducto" type="" name="" class="allInputs" placeholder="Ingresar Stock" />
+
+	<button id="agregarProducto" onclick="productosLista();">Agregar Producto</button>
+
+	<ul id="listaProductos"></ul>
+	<!--END EJERCICIO CUATRO-->
+
+</body>
+
+<script src="ejercicio.js"></script>
+
+</html>
