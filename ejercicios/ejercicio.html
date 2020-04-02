@@ -35,6 +35,25 @@
 				var saludoCurso = "Hola Como estas?";<br />
 				document.write(saludocurso)
 			</li>
+			<li>
+				Ingresar la informacion de 5 pasajeros de un micro mediante inputs, con la siguiente informacion:
+				<ul>
+					<li>Nombre</li>
+					<li>Apellido</li>
+					<li>Email</li>
+					<li>Edad</li>
+					<li>Numero de butaca</li>
+				</ul><br /><br />
+	
+				Mostrar por pantalla:
+				<ul>
+					<li>Promedio de edad</li>
+					<li>Cantidad de butacas pares ocupadas</li>
+					<li>Cantidad de butacas impares ocupadas</li>
+					<li>Nombre, apellido e email de pasajero mas joven</li>
+					<li>Nombre, apellido e email de pasajero mas viejo</li>
+				</ul>
+			</li>
 		</ul>
 	</div>
 	<!--END EJERCICIOS-->
@@ -85,6 +104,76 @@
 	<h2>Ejercicio N˚5</h2>
 	<p id="saludoCurso"></p>
 
+	<!--END EJERCICIO CUATRO-->
+
+	<hr>
+
+	<!--EJERCICIO SEIS-->
+	<h2>Ejercicio N˚6</h2>
+
+	<div class="col-pasajeros">
+		<label>Pasajero 1</label>
+		<input id="nombrePasajeroUno" type="text" name="" class="inputs-pasajeros" placeholder="Ingresar Nombre" />
+		<input id="apellidoPasajeroUno" type="text" name="" class="inputs-pasajeros" placeholder="Ingresar Apellido" />
+		<input id="emailPasajeroUno" type="email" name="" class="inputs-pasajeros" placeholder="Ingresar Email" />
+		<input id="edadPasajeroUno" type="number" name="" class="inputs-pasajeros" placeholder="Ingresar Edad" />
+		<input id="numeroButacaUno" type="number" name="" class="inputs-pasajeros" placeholder="Ingresar Butaca" />
+		<button id="datosPasajerosUno" type="button" onclick="datosPasajerosUno();">Agregar Datos</button>
+	</div>
+
+	<div class="col-pasajeros">
+		<label>Pasajero 2</label>
+		<input id="nombrePasajeroDos" type="text" name="" class="inputs-pasajeros" placeholder="Ingresar Nombre" />
+		<input id="apellidoPasajeroDos" type="text" name="" class="inputs-pasajeros" placeholder="Ingresar Apellido" />
+		<input id="emailPasajeroDos" type="email" name="" class="inputs-pasajeros" placeholder="Ingresar Email" />
+		<input id="edadPasajeroDos" type="number" name="" class="inputs-pasajeros" placeholder="Ingresar Edad" />
+		<input id="numeroButacaDos" type="number" name="" class="inputs-pasajeros" placeholder="Ingresar Butaca" />
+		<button id="datosPasajerosDos" type="button" onclick="datosPasajerosDos();">Agregar Datos</button>
+	</div>
+
+	<div class="col-pasajeros">
+		<label>Pasajero 3</label>
+		<input id="nombrePasajeroTres" type="text" name="" class="inputs-pasajeros" placeholder="Ingresar Nombre" />
+		<input id="apellidoPasajeroTres" type="text" name="" class="inputs-pasajeros" placeholder="Ingresar Apellido" />
+		<input id="emailPasajeroTres" type="email" name="" class="inputs-pasajeros" placeholder="Ingresar Email" />
+		<input id="edadPasajeroTres" type="number" name="" class="inputs-pasajeros" placeholder="Ingresar Edad" />
+		<input id="numeroButacaTres" type="number" name="" class="inputs-pasajeros" placeholder="Ingresar Butaca" />
+		<button id="datosPasajerosTres" type="button" onclick="datosPasajerosTres();">Agregar Datos</button>
+	</div>
+
+	<div class="col-pasajeros">
+		<label>Pasajero 4</label>
+		<input id="nombrePasajeroCuatro" type="text" name="" class="inputs-pasajeros" placeholder="Ingresar Nombre" />
+		<input id="apellidoPasajeroCuatro" type="text" name="" class="inputs-pasajeros" placeholder="Ingresar Apellido" />
+		<input id="emailPasajeroCuatro" type="email" name="" class="inputs-pasajeros" placeholder="Ingresar Email" />
+		<input id="edadPasajeroCuatro" type="number" name="" class="inputs-pasajeros" placeholder="Ingresar Edad" />
+		<input id="numeroButacaCuatro" type="number" name="" class="inputs-pasajeros" placeholder="Ingresar Butaca" />
+		<button id="datosPasajerosCuatro" type="button" onclick="datosPasajerosCuatro();">Agregar Datos</button>
+	</div>
+
+	<div class="col-pasajeros">
+		<label>Pasajero 5</label>
+		<input id="nombrePasajeroCinco" type="text" name="" class="inputs-pasajeros" placeholder="Ingresar Nombre" />
+		<input id="apellidoPasajeroCinco" type="text" name="" class="inputs-pasajeros" placeholder="Ingresar Apellido" />
+		<input id="emailPasajeroCinco" type="email" name="" class="inputs-pasajeros" placeholder="Ingresar Email" />
+		<input id="edadPasajeroCinco" type="number" name="" class="inputs-pasajeros" placeholder="Ingresar Edad" />
+		<input id="numeroButacaCinco" type="number" name="" class="inputs-pasajeros" placeholder="Ingresar Butaca" />
+		<button id="datosPasajerosCinco" type="button" onclick="datosPasajerosCinco();">Agregar Datos</button>
+	</div>
+
+	<p class="resultado-texto">Resultado:</p>
+	<ul id="listaPasajeroUno" class="listas-pasajeros"></ul>
+	<ul id="listaPasajeroDos" class="listas-pasajeros"></ul>
+	<ul id="listaPasajeroTres" class="listas-pasajeros"></ul>
+	<ul id="listaPasajeroCuatro" class="listas-pasajeros"></ul>
+	<ul id="listaPasajeroCinco" class="listas-pasajeros"></ul>
+
+	<hr>
+
+	<button id="promedioEdad" type="button" onclick="promedioEdad();">Sacar promedio edad</button>
+	<p id="promedioEdadResultado"></p>
+
+	<hr>
 
 </body>
 

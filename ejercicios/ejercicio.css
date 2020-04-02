@@ -76,6 +76,8 @@ button:hover, button:focus, input:active {
 
 hr {
 	margin: 20px 0;
+	display: block;
+	width: 100%;
 }
 
 h2 {
@@ -92,5 +94,19 @@ h2 {
 }
 
 .resultado-texto {
+	margin-bottom: 10px;
+}
+
+.inputs-pasajeros {
+	margin-bottom: 10px;
+}
+
+.col-pasajero {
+	margin-bottom: 10px;
+}
+
+.listas-pasajeros {
+	float: left;
+	display: block;
 	margin-bottom: 10px;
 }
